@@ -29,6 +29,10 @@ const vm = createApp({
             login: [],
             nickname: '',
             msg: '',
+            joined: false,
+            active_user: '',
+            
+            
 
         }
     },

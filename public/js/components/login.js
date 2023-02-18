@@ -7,8 +7,9 @@ export default {
 
 template: `
 <!-- creating a log in form once user joins the chats -->
-<div class="login">
     <!--create login page-->
+    <div v-if="!joined" class="mainmain">
+    <div class="mainlogin">
 
     <div v-if="!joined" class="login-container">
     <h2 class="login_title">Log In to start the chatting</h2>
@@ -23,14 +24,13 @@ template: `
     <input type="password" placeholder="Enter Password" class="password_input">
 
     <!-- button -->
-   <button class="joinbtn" v-on:click="join">Join</button>
+   <button class="joinbtn" v-on:click="join">login</button>
     </div>
     </div>
-</div>
     <div v-if="joined">
     </div>
-   
-
+   </div>
+</div>
 
 
 
@@ -48,6 +48,7 @@ return {
 
    joined: false,
    active_user: '',
+
 
 }
 

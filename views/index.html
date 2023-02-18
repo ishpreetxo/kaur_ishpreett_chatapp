@@ -12,20 +12,32 @@
 <body>
     <h1>Chat App</h1>
     <main id="app">
-        <section>
+       
             <!-- rendering the component -->
 
             <div class="loginf">
-                <login>rendering user form</login>
+                <login>rendering user form
             </div>
-         
-            <h2>Input messages here:</h2>
+            
+        </login>
+            <section class="flex">
+                <div class="intro2">
+                <div class="intro1">
+            <h2 class="intro">Enter your nickname:</h2>
             <input id="nickname" v-model="nickname" type="text" placeholder="Nickname?">
-        <form>
-            <label for="message">Something to say?</label>
+        </div>
+    </div>
+        <div class="chat">
+            <form>  
+            <label for="message" class="msgss">Type Something & Send</label>
             <textarea @focus="catchTextFocus" v-model="message" id="textarea" class="message" autocomplete="off"></textarea>
-            <input @click.prevent="dispatchMessage" type= "submit" value="Send">
+            <input @click.prevent="dispatchMessage" type= "submit" value="Send" class="send">
         </form>
+        </div>
+        </div>
+        </section>
+</div>
+        
     </section>
 
         <section class="'messages">
