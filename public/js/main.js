@@ -18,6 +18,20 @@ function handleUserTyping(user) {
     console.log('user is typing');
 }
 
+//adding audio functionality
+function playAudio() {
+    var audio = new Audio('./audio/chat.mp3');
+
+    if (vm.messages) {
+      audio.play();
+    }
+    else {
+      audio.pause();
+    };
+
+  };
+
+
 const { createApp } = Vue
 
 const vm = createApp({
