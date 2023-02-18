@@ -54,15 +54,15 @@
 }
 
 .chat {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
+    display: grid;
+    grid-template-columns: 1fr 0fr;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     padding: 10px;
     background: #500038;
     border-radius: 15px;
+    // height: 100vh;
 }
 
 .msgss {
@@ -77,8 +77,8 @@
 {
 
     //button
-    background: #500038;
-    color: #fff;
+    background: #ffffff;
+    color: #500038;
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -119,3 +119,50 @@
     border-radius: 15px;
     
 }
+
+.chat_component{
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    height: 90%;
+    background-color: #000e45;
+    color: #ffffff;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 35%;
+    width: 50%; 
+    margin-left: 20px;
+    border-radius : 20px;
+    position: revert;
+
+
+
+}
+
+.messageComp {
+    //message area 
+    
+    display: grid;      align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+        height: 100%;
+        background-color: #ffffff;
+        color: #000e45;
+        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        border-radius : 20px;
+        position: revert;
+        text-align: center;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+   
+    &::-webkit-scrollbar {
+        display: none;
+    }

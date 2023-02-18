@@ -27,13 +27,12 @@
             <input id="nickname" v-model="nickname" type="text" placeholder="Nickname?">
         </div>
     </div>
-        <div class="chat">
+        <section class="chat">
             <form>  
             <label for="message" class="msgss">Type Something & Send</label>
             <textarea @focus="catchTextFocus" v-model="message" id="textarea" class="message" autocomplete="off"></textarea>
             <input @click.prevent="dispatchMessage" type= "submit" value="Send" class="send">
         </form>
-        </div>
         </div>
         </section>
 </div>
@@ -41,11 +40,16 @@
     </section>
 
         <section class="'messages">
+            <div class="messageComp">
             <ul id="messages">
+                <div class="message_area">
                 <!-- render a new message component for every message -->
                 <newmsg v-for="message in messages" :message="message"></newmsg>
             </ul>
+        </div>
+    </div>
         </section>
+    </section>    
     </main>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
