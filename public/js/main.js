@@ -20,7 +20,7 @@ function handleUserTyping(user) {
 
 //adding audio functionality
 function playAudio() {
-    var audio = new Audio('./audio/chat.mp3');
+    var audio = new Audio('./audio/sound.mp3');
 
     if (vm.messages) {
       audio.play();
@@ -82,3 +82,5 @@ const vm = createApp({
 socket.addEventListener('connected', setUserID);
 socket.addEventListener('new_message', showNewMessage);
 socket.addEventListener('typing', handleUserTyping);
+// calling the audio function
+socket.addEventListener('new_message', playAudio);
