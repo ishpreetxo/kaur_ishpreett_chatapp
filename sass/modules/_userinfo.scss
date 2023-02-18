@@ -1,21 +1,54 @@
 //styling the log in page
 
-.loginf {
-    
-    width: 50%;
-    height: 45%;
+.login-container {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 35px;
     justify-content: center;
     align-items: center;
     background: rgb(255, 255, 255);
     border-radius: 40px;
-    border: 05px solid #000e45 ;
-    color: #000000;
+    border: 05px solid #5a004c ;
+    color: #500038;
     font-family: Helvetica, sans-serif;
     font-size: 1.2rem;
-    // make it on top of the background
-    position: absolute;
-    filter: blur(95px);
+    width: 40vw;
+    height: 60vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 30vw;
+    margin-right: 30vw;
 
+};
+
+.mainlogin {
+   
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    backdrop-filter: blur(25px);
+    background: #ff0084;
+    
+    // gradient used from free source lib////
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+
+}
+h1 {
+    display: none;
+}
+
+.loginf {
+    display:flex;
+    width: 100vw;
+    // height: 100vh;
+   
 }
 
 .login_title {
@@ -29,12 +62,78 @@
 main {
 
     display: grid; 
-    height: 100vh;
-    width: 100vw;
     grid-gap: 1em;  
     justify-content: center;
+    align-items: center;
+    align-content: center;
     text-align: center;
+    justify-items: center;
     
 
 
 }
+    
+    .loginform {
+        display: flex;  
+        flex-direction: column;
+        align-content: center;
+
+    }
+
+.username, .password {
+    font-size: 17px;
+    margin-bottom:15px;
+    text-align: center;
+    font-weight: 590;
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    
+}
+
+
+
+.user_name, .password_input {
+    height: 30px;
+    font-size: 17px;
+    padding: 5px;
+    margin-bottom:15px;
+    text-align: left;
+    font-weight: 790;
+    border: 1px solid #060606 ;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+.user_name:focus, .password_input:focus {
+    outline: none;
+}
+
+.joinbtn {
+    background: #500038;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid #500038;
+
+    //effect on hover 
+
+    &:hover {
+        background: #fff;
+        color: #500038;
+        border: 1px solid #500038;
+    }
+}
+

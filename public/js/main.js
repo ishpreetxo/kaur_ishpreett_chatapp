@@ -18,6 +18,20 @@ function handleUserTyping(user) {
     console.log('user is typing');
 }
 
+//adding audio functionality
+function playAudio() {
+    var audio = new Audio('./audio/sound.mp3');
+
+    if (vm.messages) {
+      audio.play();
+    }
+    else {
+      audio.pause();
+    };
+
+  };
+
+
 const { createApp } = Vue
 
 const vm = createApp({
@@ -29,6 +43,10 @@ const vm = createApp({
             login: [],
             nickname: '',
             msg: '',
+            joined: false,
+            active_user: '',
+            
+            
 
         }
     },
@@ -64,3 +82,5 @@ const vm = createApp({
 socket.addEventListener('connected', setUserID);
 socket.addEventListener('new_message', showNewMessage);
 socket.addEventListener('typing', handleUserTyping);
+// calling the audio function
+socket.addEventListener('new_message', playAudio);
