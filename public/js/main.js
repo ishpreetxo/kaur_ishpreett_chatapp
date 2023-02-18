@@ -1,5 +1,6 @@
 // imports will always go at the top
 import chatMsg from './components/ChatMessage.js';
+import login from './components/login.js';
 
 const socket = io();
 
@@ -11,7 +12,6 @@ function setUserID({ sID }) {
 
 function showNewMessage({ message }) {
     vm.messages.push(message);
-    console.log(msg);
 }
 
 function handleUserTyping(user) {
@@ -26,7 +26,10 @@ const vm = createApp({
             socketID: '',
             message: '',
             messages: [],
-            nickname: ''
+            login: [],
+            nickname: '',
+            msg: '',
+
         }
     },
 
@@ -50,8 +53,12 @@ const vm = createApp({
     },
 
     components: {
-        newmsg: chatMsg
+        newmsg: chatMsg,
+        login: login
     }
+
+
+
 }).mount('#app')
 
 socket.addEventListener('connected', setUserID);

@@ -40,6 +40,6 @@ io.on('connection', (socket) => {
     io.emit('typing', { currentlytyping: user })
   })
 
-  socket.emit('connected', {sID: socket.id, message: 'new connection'});
+  socket.emit('connected', {sID: socket.id, message: 'new connection'}); 
 
 });
