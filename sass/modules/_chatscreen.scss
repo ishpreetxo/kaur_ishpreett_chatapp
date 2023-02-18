@@ -142,27 +142,30 @@
 .messageComp {
     //message area 
     
-    display: grid;      align-items: center;
+        display: grid;
+        align-items: center;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 20px;
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
-        height: 100%;
         background-color: #ffffff;
-        color: #000e45;
+      
         text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
         text-transform: uppercase;
-        border-radius : 20px;
+        border-radius : 26px;
         position: revert;
+          color: #500038;
         text-align: center;
         overflow-y: scroll;
+
         &::-webkit-scrollbar {
             display: none;
         }
+
+        width: 100%;
     }
    
-    &::-webkit-scrollbar {
-        display: none;
-    }
+
+    

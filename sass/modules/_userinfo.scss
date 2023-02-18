@@ -24,14 +24,16 @@
 };
 
 .mainlogin {
-
-    //cover the whole screen
+   
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 100;
     backdrop-filter: blur(25px);
-    background: #ff0084;  /* fallback for old browsers */
+    background: #ff0084;
+    
+    // gradient used from free source lib////
+    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
@@ -44,8 +46,6 @@ h1 {
 
 .loginf {
     display:flex;
-    // background-color:rgb(89, 30, 30);
-    //cover the full page
     width: 100vw;
     // height: 100vh;
    
@@ -62,8 +62,6 @@ h1 {
 main {
 
     display: grid; 
-    // height: 100vh;
-    // width: 100vw;
     grid-gap: 1em;  
     justify-content: center;
     align-items: center;
@@ -116,8 +114,6 @@ main {
 }
 
 .joinbtn {
-
-    //make it look good
     background: #500038;
     color: #fff;
     font-size: 1.2rem;
