@@ -1,19 +1,10 @@
 * {
-    margin: 0;
+    // margin: 0;
     border: none;
     padding: 0;
 
     box-sizing: border-box;
 }
-
-body {
-    font-size: 16px;
-    background-color: rgb(202, 129, 248);
-    color: rgb(255, 255, 255);
-
-    font-family: Helvetica;
-}
-
 
 main section { padding: 1em; }
 
@@ -27,20 +18,21 @@ input[type="submit"] {
     display: block; 
     margin-top: 1em; 
     padding: 8px 12px; 
-    border-radius: 0.5em; 
+    // border-radius: 0.5em; 
 }
 
 .chat-messages {
     float: left;
-    background-color: #efefef;
+    background-color: rgb(70, 4, 135);
     padding: 15px;
     margin: 10px;
-     width: 70%;
+    width: 70%;
     text-align: left;
+    font-family: 'Comfortaa', cursive;
     font-size: 15px;
     font-weight: 500;
-    color:  #500038;
-    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    color:  rgb(255, 255, 255);
+    // text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     overflow-wrap: break-word;
     word-wrap: break-word;
     border-radius: 40px 40px 40px 0px;
@@ -52,15 +44,16 @@ input[type="submit"] {
 .other-messages {
     float: right;
     clear: both;
-    background-color: #500038;
+    background-color: rgb(70, 4, 135);
     padding: 15px;
     margin: 10px;
     width: 70%;
     text-align: right;
+    font-family: 'Comfortaa', cursive;
     font-size: 15px;
     font-weight: 500;
-    color: #efefef;
-    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    // text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     overflow-wrap: break-word;
     word-wrap: break-word;
     border-radius: 40px 40px 0px 40px;
@@ -69,9 +62,14 @@ input[type="submit"] {
 }
 
 body {
-    background: #62475d;
-    color: #fff;
-    font-family: Helvetica, sans-serif;
+    background-color: rgb(189, 136, 242);
+    background-image: linear-gradient(rgb(240, 222, 247) 2px, transparent 5px);
+    background-size: 20px 50px;  
+
+    // background: #62475d;
+    // color: #fff;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(240, 222, 247);
     font-size: 16px;
     line-height: 1.5;
     text-align: center;

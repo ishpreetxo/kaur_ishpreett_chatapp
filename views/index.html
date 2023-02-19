@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <title>Chat</title>
 </head>
 
 <body>
     <h1>Chat App</h1>
-    <main id="app">
+    <main id="app">        
        
             <!-- rendering the component -->
 
@@ -23,13 +24,13 @@
             <section class="flex">
                 <div class="intro2">
                 <div class="intro1">
-            <h2 class="intro">Enter your nickname:</h2>
-            <input id="nickname" v-model="nickname" type="text" placeholder="Nickname?">
+            <h2 class="intro">Enter Your Nickname:</h2>
+            <input id="nickname" v-model="nickname" type="text" placeholder="nickname?">
         </div>
     </div>
         <section class="chat">
             <form>  
-            <label for="message" class="msgss">Type Something & Send</label>
+            <label for="message" class="msgss">Type Something & Send!</label>
             <textarea @focus="catchTextFocus" v-model="message" id="textarea" class="message" autocomplete="off"></textarea>
             <input @click.prevent="dispatchMessage" type= "submit" value="Send" class="send">
         </form>
