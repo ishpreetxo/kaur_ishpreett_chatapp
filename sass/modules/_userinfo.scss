@@ -5,15 +5,16 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding: 35px;
+    // padding: 35px;
     justify-content: center;
     align-items: center;
-    background: rgb(255, 255, 255);
-    border-radius: 40px;
-    border: 05px solid #5a004c ;
-    color: #500038;
-    font-family: Helvetica, sans-serif;
-    font-size: 1.2rem;
+    background: rgb(231, 216, 247);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    // border-radius: 40px;
+    // border: 05px solid #5a004c ;
+    color: rgb(70, 4, 135);
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2em;
     width: 40vw;
     height: 60vh;
     margin-top: 10vh;
@@ -28,18 +29,12 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 100;
-    backdrop-filter: blur(25px);
-    background: #ff0084;
     
-    // gradient used from free source lib////
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-
-
+    background-color: rgb(189, 136, 242);
+    background-image: linear-gradient(rgb(240, 222, 247) 2px, transparent 5px);
+    background-size: 20px 50px;  
 }
+
 h1 {
     display: none;
 }
@@ -52,11 +47,11 @@ h1 {
 }
 
 .login_title {
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-top: 20px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+    // font-weight: 700;
+    margin-bottom: 20px;
+    // text-transform: uppercase;
 }
 
 main {
@@ -80,32 +75,20 @@ main {
 
     }
 
-.username, .password {
-    font-size: 17px;
-    margin-bottom:15px;
-    text-align: center;
-    font-weight: 590;
-    color: #000000;
-    font-family: Helvetica, sans-serif;
-    text-transform: uppercase;
-    margin-top: 20px;
-    
-}
-
-
 
 .user_name, .password_input {
     height: 30px;
-    font-size: 17px;
+    // width: 250px;
+    font-size: 14px;
     padding: 5px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     text-align: left;
-    font-weight: 790;
-    border: 1px solid #060606 ;
-    border-radius: 15px;
+    font-weight: 600;
+    border: 0.1px solid rgb(70, 4, 135);
+    // border-radius: 15px;
     background: rgb(255, 255, 255);
-    color: #000000;
-    font-family: Helvetica, sans-serif;
+    // color: #000000;
+    font-family: 'Comfortaa', cursive;
     
 }
 
@@ -114,26 +97,27 @@ main {
 }
 
 .joinbtn {
-    background: #500038;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+    background: rgb(70, 4, 135);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;    
     text-transform: uppercase;
-    border: none;
-    border-radius: 15px;
+    // border: none;
+    // border-radius: 15px;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    border: 1px solid #500038;
+    // border: 1px solid #500038;
 
     //effect on hover 
 
     &:hover {
-        background: #fff;
-        color: #500038;
-        border: 1px solid #500038;
+        background: rgb(255, 255, 255);
+        color: rgb(70, 4, 135);
+        border: 1px solid rgb(70, 4, 135);
     }
 }
+
 

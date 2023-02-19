@@ -1,56 +1,36 @@
-.chatscrn {
- display: flex;
- flex-direction: column;
-    top: 0;
-    left: 0;
-   
-
-}
-
 .intro1
 {
-    background: #500038;
-    color: #fff;
-    font-size: 1.2rem;
+    background: rgb(231, 216, 247);
+    color: rgb(70, 4, 135);
+    font-size: 1rem;
     font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 15px;
-    padding: 6px 166px;
+    // text-transform: uppercase;
+    // border: none;
+    // border-radius: 15px;
+    padding: 6px 166px;  
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     /* margin-bottom: 20%; */
     text-align: center;
     display: flex;
-    top: 0;
+    // top: 0;
 }
-   
-    
-
-
-
-        
-
-
+      
 .intro {
-    margin-right: 10px;
+    margin-top: 5px;
+    margin-right: 100px;
 }
 
 #nickname {
-    background: #fff;
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 15px;
+    background: rgb(255, 255, 255);  
+    font-family: 'Comfortaa', cursive;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;    
+    border: 0.1px solid rgb(70, 4, 135);
+    // border-radius: 15px;
     margin: 10px;
     text-align: center;
 
-}
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    
 }
 
 .chat {
@@ -60,30 +40,42 @@
     margin-bottom: 10px;
     margin-left: 10px;
     padding: 10px;
-    background: #500038;
-    border-radius: 15px;
+    background: rgb(231, 216, 247);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    // border-radius: 15px;
     // height: 100vh;
 }
 
-.msgss {
+#textarea {  
+    font-family: 'Comfortaa', cursive;
+    background: rgb(255, 255, 255);
+    color: rgb(70, 4, 135);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 0.1px solid rgb(70, 4, 135);
+    // text-transform: uppercase;
+    // resize: none;
+}
 
+.msgss {
+    color: rgb(70, 4, 135);
     font-size: 1.2rem;
     font-weight: 700;
-    text-transform: uppercase;
-
+    font-family: 'Comfortaa', cursive;
+    // text-transform: uppercase;
 }
 
 .send 
 {
 
     //button
-    background: #ffffff;
-    color: #500038;
-    font-size: 1.2rem;
-    font-weight: 700;
+    background: rgb(70, 4, 135);
+    color: rgb(255, 255, 255);
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    // font-weight: 700;
     text-transform: uppercase;
-
-    border-radius: 15px;
+    // border-radius: 15px;
     padding: 10px 20px;
     text-align: center;
     margin: 12px;
@@ -91,53 +83,14 @@
     //hover 
 
     &:hover {
-        background: #fff;
-        color: #000;
+        background: rgb(255, 255, 255);
+        color: rgb(70, 4, 135);
+        border: 1px solid rgb(70, 4, 135);
         cursor: pointer;
     }
 
 }
 
-#textarea {
-    background: #fff;
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    resize: none;
-}
-
-.message {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    padding: 10px;
-    background:#ffffff;
-    border-radius: 15px;
-    
-}
-
-.chat_component{
-    display: grid;
-    justify-content: center;
-    padding: 20px;
-    height: 90%;
-    background-color: #000e45;
-    color: #ffffff;
-    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-    margin-top: 35%;
-    width: 50%; 
-    margin-left: 20px;
-    border-radius : 20px;
-    position: revert;
-
-
-
-}
 
 .messageComp {
     //message area 
@@ -150,13 +103,14 @@
         margin-left: 10px;
         margin-right: 10px;
         padding: 10px;
-        background-color: #ffffff;
-      
-        text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-        text-transform: uppercase;
-        border-radius : 26px;
+        background-color: rgb(231, 216, 247);
+        font-family: 'Comfortaa', cursive;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        // text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+        // text-transform: uppercase;
+        // border-radius : 26px;
         position: revert;
-          color: #500038;
+        //   color: #502900;
         text-align: center;
         overflow-y: scroll;
 

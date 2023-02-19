@@ -12,16 +12,16 @@ template: `
     <div class="mainlogin">
 
     <div v-if="!joined" class="login-container">
-    <h2 class="login_title">Log In to start the chatting</h2>
+    <h2 class="login_title">Log In to Chat!</h2>
 
     <!-- username -->
-    <div class="loginform">
-    <h2 class="username">Username</h2>
-   <input type="text" class="user_name" v-model="active_user" placeholder="Enter Username">
+    <div class="loginform">      
+    
+    
+   <input type="text" class="user_name" v-model="active_user" placeholder="username">
 
-    <!-- password -->
-    <h2 class="password">Password</h2>
-    <input type="password" placeholder="Enter Password" class="password_input">
+    <!-- password -->    
+    <input type="password" placeholder="password" class="password_input">
 
     <!-- button -->
    <button class="joinbtn" v-on:click="join">login</button>
